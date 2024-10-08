@@ -8,10 +8,10 @@
 
 declare(strict_types=1);
 
-namespace App\MobileAppliaction\Domain\Entity;
+namespace App\MobileApplication\Domain\Entity;
 
-use App\MobileAppliaction\Domain\ValueObject\ApplicationId;
-use App\MobileAppliaction\Domain\ValueObject\ApplicationName;
+use App\MobileApplication\Domain\ValueObject\ApplicationId;
+use App\MobileApplication\Domain\ValueObject\ApplicationName;
 
 class Application
 {

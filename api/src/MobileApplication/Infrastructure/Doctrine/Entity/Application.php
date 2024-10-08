@@ -6,9 +6,11 @@
  * Time: 11:12
  */
 
+declare(strict_types=1);
+
 namespace App\MobileApplication\Infrastructure\Doctrine\Entity;
 
-use App\MobileAppliaction\Infrastructure\Doctrine\Repository\ApplicationRepository;
+use App\MobileApplication\Infrastructure\Doctrine\Repository\ApplicationRepository;
 use Carbon\Carbon;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -26,7 +28,7 @@ class Application
     #[ORM\Column(type: 'datetime')]
     private Carbon $createdAt;
 
-    #[ORM\Column(type: 'datetime')]
+    #[ORM\Column(type: 'datetime', nullable: true)]
     private ?Carbon $updatedAt = null;
 
     public function __construct(string $id, string $name)

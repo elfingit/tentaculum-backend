@@ -6,7 +6,7 @@
  * Time: 10:45
  */
 
-namespace App\MobileAppliaction\Domain\ValueObject;
+namespace App\MobileApplication\Domain\ValueObject;
 
 use App\Common\ValueObject\Uuid;
 

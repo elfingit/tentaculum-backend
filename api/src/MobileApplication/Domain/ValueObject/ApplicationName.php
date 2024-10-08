@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace App\MobileAppliaction\Domain\ValueObject;
+namespace App\MobileApplication\Domain\ValueObject;
 
 use App\Common\ValueObject\StringValue;
 
