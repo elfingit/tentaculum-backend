@@ -20,6 +20,7 @@ use Doctrine\ORM\Mapping as ORM;
 class User
 {
     #[ORM\Id]
+    #[ORM\GeneratedValue]
     #[ORM\Column(type: Types::INTEGER, options: ['unsigned' => true])]
     private int $id;
 
@@ -28,4 +29,23 @@ class User
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private Carbon $createdAt;
+
+    public function __construct()
+    {
+    }
+
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getCreatedAt(): Carbon
+    {
+        return $this->createdAt;
+    }
 }
