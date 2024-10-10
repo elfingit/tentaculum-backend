@@ -8,7 +8,7 @@
 
 namespace App\MobileApplication\Domain\ValueObject;
 
-use App\Common\ValueObject\Uuid;
+use App\Common\Domain\ValueObject\Uuid;
 
 final class ApplicationId extends Uuid
 {

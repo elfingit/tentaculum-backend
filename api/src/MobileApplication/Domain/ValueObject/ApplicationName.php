@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace App\MobileApplication\Domain\ValueObject;
 
-use App\Common\ValueObject\StringValue;
+use App\Common\Domain\ValueObject\StringValue;
 
 final class ApplicationName extends StringValue
 {

@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace App\MobileApplication\Domain\Repository;
 
-use App\Common\Domain\Repository;
+use App\Common\Domain\Repository\Repository;
 use App\MobileApplication\Domain\Entity\Application as ApplicationDomainEntity;
 
 interface ApplicationRepository extends Repository

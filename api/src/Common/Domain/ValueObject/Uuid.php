@@ -8,9 +8,10 @@
 
 declare(strict_types=1);
 
-namespace App\Common\ValueObject;
+namespace App\Common\Domain\ValueObject;
 
 use Ramsey\Uuid\Uuid as RamseyUuid;
+
 abstract class Uuid
 {
     private function __construct(protected string $value)

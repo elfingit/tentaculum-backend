@@ -30,8 +30,10 @@ class User
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private Carbon $createdAt;
 
-    public function __construct()
+    public function __construct(string $email)
     {
+        $this->email = $email;
+        $this->createdAt = Carbon::now();
     }
 
     public function getId(): int
