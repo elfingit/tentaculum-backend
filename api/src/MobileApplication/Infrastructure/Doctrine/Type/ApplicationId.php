@@ -12,7 +12,7 @@ namespace App\MobileApplication\Infrastructure\Doctrine\Type;
 
 use App\Common\Infrastructure\Symfony\Type\UuidType;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use App\MobileAppliaction\Domain\ValueObject\ApplicationId as ApplicationIdValueObject;
+use App\MobileApplication\Domain\ValueObject\ApplicationId as ApplicationIdValueObject;
 
 class ApplicationId extends UuidType
 {

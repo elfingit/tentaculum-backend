@@ -19,7 +19,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Application
 {
     #[ORM\Id]
-    #[ORM\Column(type: 'application_id')]
+    #[ORM\Column(type: 'application_id', unique: true)]
     private string $id;
 
     #[ORM\Column(type: 'string')]

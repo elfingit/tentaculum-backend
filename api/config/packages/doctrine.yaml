@@ -11,6 +11,7 @@ doctrine:
         
         types:
             application_id: App\MobileApplication\Infrastructure\Doctrine\Type\ApplicationId
+            uuid: Ramsey\Uuid\Doctrine\UuidType
     orm:
         auto_generate_proxy_classes: true
         enable_lazy_ghost_objects: true
@@ -24,6 +25,11 @@ doctrine:
                 type: attribute
                 dir: '%kernel.project_dir%/src/MobileApplication/Infrastructure/Doctrine/Entity'
                 prefix: 'App\MobileApplication\Infrastructure\Doctrine\Entity'
+            User:
+                is_bundle: false
+                type: attribute
+                dir: '%kernel.project_dir%/src/User/Infrastructure/Doctrine/Entity'
+                prefix: 'App\User\Infrastructure\Doctrine\Entity'
         controller_resolver:
             auto_mapping: true
 
